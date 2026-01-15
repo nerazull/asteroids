@@ -52,7 +52,7 @@ def main():
             for shot in shots:
                 if CircleShape.collides_with(obj, shot):
                     log_event("asteroid_shot")
-                    obj.kill()
+                    obj.split()
                     shot.kill()
             
         for item in drawable:
